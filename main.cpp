@@ -45,8 +45,16 @@ int main()
         int Peso[] = {1, 2, 5, 6, 7, 9, 11};
         int Valor[] = {1, 6, 18, 22, 28, 40, 60};
     */
+    cout << "Digite 01 para mochila01, 02 para mochila02, 1000 para mochila1000";
+    cout << "2500 para mochila2500 ou 5000 para mochila5000:" <<endl;
+
+    string x;
+    cin >> x;
+    cout<<endl;
+    string arquivo = "mochila"+x+".txt";
+
     ifstream inFile;
-    inFile.open("mochila01.txt");
+    inFile.open(arquivo);
     if(!inFile){
         cerr << "Unable to open file!";
         return 0;
@@ -84,8 +92,6 @@ int main()
 
     int resultado = KnapSack(M, nElementos, Peso, Valor);
     cout<< "Resultado: " << resultado <<endl;
-
-    cout<< "Produtos escolhidos: ";
 
     return 0;
 }
