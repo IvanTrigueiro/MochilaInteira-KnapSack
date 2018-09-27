@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1538009232 source:c:\users\ivan\documents\ufpb\análise de projetos e algoritmos\6_sextaatividade(mochilainteira)\mochilainteira(knapsack)\main.cpp
+	<iostream>
+	<fstream>
+
